@@ -1,0 +1,14 @@
+export { default as DisplayText } from "./DisplayText";
+export { default as DisplayTextM } from "./DisplayTextM";
+export { default as SubHeading } from "./SubHeading";
+export { default as HeadingH1 } from "./HeadingH1";
+export { default as HeadingH2 } from "./HeadingH2";
+export { default as HeadingH3 } from "./HeadingH3";
+export { default as HeadingH4 } from "./HeadingH4";
+export { default as HeadingH5 } from "./HeadingH5";
+export { default as HeadingH6 } from "./HeadingH6";
+export { default as ParagraphP1 } from "./ParagraphP1";
+export { default as ParagraphP2 } from "./ParagraphP2";
+export { default as ParagraphP3 } from "./ParagraphP3";
+export { default as ButtonText } from "./ButtonText";
+export { default as ButtonText2 } from "./ButtonText2";
