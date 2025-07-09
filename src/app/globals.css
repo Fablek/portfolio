@@ -22,6 +22,12 @@ body {
   font-family: var(--font-sora);
 }
 
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .text-outline {
   color: white;
   text-shadow:

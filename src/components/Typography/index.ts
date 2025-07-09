@@ -12,3 +12,4 @@ export { default as ParagraphP2 } from "./ParagraphP2";
 export { default as ParagraphP3 } from "./ParagraphP3";
 export { default as ButtonText } from "./ButtonText";
 export { default as ButtonText2 } from "./ButtonText2";
+export { default as NavLink } from "./NavLink";
