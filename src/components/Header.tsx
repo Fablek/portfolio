@@ -1,6 +1,8 @@
 "use client"
 
 import { HeadingH5, ButtonText, NavLink } from "@/components/Typography"; 
+import { Button } from "@/components/Button";
+import DownloadIcon from "@/components/Icons/DownloadIcon";
 
 export default function Header() {
     return (
@@ -20,7 +22,9 @@ export default function Header() {
             <NavLink href="/#contact">Contact me</NavLink>
           </nav>
 
-          <ButtonText weight="semibold">Resume</ButtonText>
+          <Button size="medium" iconPosition="right" variant="solid" icon={<DownloadIcon />}>
+            <ButtonText weight="semibold">Resume</ButtonText>
+          </Button>
         </header>
     )
 }

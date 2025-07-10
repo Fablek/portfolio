@@ -17,7 +17,7 @@ export default function ButtonText2({
   className = "",
 }: Props) {
   const baseClasses =
-    "text-[16px] leading-[20px] tracking-[0.02em] text-[var(--gray-900)]";
+    "text-[16px] leading-[20px] tracking-[0.02em]";
   return (
     <span className={`${baseClasses} ${weightMap[weight]} ${className}`}>
       {children}
