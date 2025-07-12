@@ -10,7 +10,7 @@ import DiscordIcon from "@/components/Icons/DiscordIcon";
 
 export default function Hero() {
   return (
-    <section className="container px-28 mt-[60px] relative flex items-center justify-between gap-12">
+    <section className="container px-28 mt-[60px] mb-[60px] relative flex items-center justify-between gap-12">
       
       {/* Left side */}
       <div className="max-w-[600px]">

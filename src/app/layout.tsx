@@ -3,6 +3,7 @@ import { Sora } from "next/font/google";
 import "./globals.css";
 
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 import { DisplayText, DisplayTextM, SubHeading, HeadingH1, HeadingH2, HeadingH3, HeadingH4, HeadingH5, HeadingH6, ParagraphP1, ParagraphP2, ParagraphP3, ButtonText, ButtonText2 } from "@/components/Typography"; 
 
@@ -31,9 +32,7 @@ export default function RootLayout({
 
         {children}
 
-        <footer>
-
-        </footer>
+        <Footer />
       </body>
     </html>
   );
