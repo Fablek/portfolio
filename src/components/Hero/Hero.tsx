@@ -2,7 +2,11 @@
 
 import Image from "next/image";
 import { DisplayText, DisplayTextM, ParagraphP2 } from "@/components/Typography";
-// import SocialLink from "@/components/SocialLink";
+import SocialLink from "@/components/Socials/SocialLink";
+
+import FacebookIcon from "@/components/Icons/FacebookIcon";
+import LinkedInIcon from "@/components/Icons/LinkedInIcon";
+import DiscordIcon from "@/components/Icons/DiscordIcon";
 
 export default function Hero() {
   return (
@@ -28,6 +32,12 @@ export default function Hero() {
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
             printer took a galley of type and scrambled it to specimen book.
         </ParagraphP2>
+
+        <div className="flex gap-4 absolute bottom-[-30px]">
+          <SocialLink href="https://facebook.com" icon={<FacebookIcon />} isActive />
+          <SocialLink href="https://www.linkedin.com/in/sebastian-pytka-376466208/" icon={<LinkedInIcon />} />
+          <SocialLink href="https://discord.com/" icon={<DiscordIcon />} />
+        </div>
       </div>
 
       {/* Right side */}
