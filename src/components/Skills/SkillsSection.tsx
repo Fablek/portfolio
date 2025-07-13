@@ -1,8 +1,8 @@
-// import SkillCard from "./SkillCard";
 import { DisplayText } from "@/components/Typography";
 
-// import { FaGit, FaJs, FaSass } from "react-icons/fa";
-// import { SiNestjs, SiStorybook, SiSocketdotio } from "react-icons/si";
+import GitIcon from "@/components/Icons/GitIcon";
+
+import SkillCard from "./SkillCard";
 
 export default function SkillsSection() {
   return (
@@ -11,18 +11,17 @@ export default function SkillsSection() {
         My <span className="font-extrabold">Skills</span>
       </DisplayText>
 
-      <div className="">
-        {/* <SkillCard icon={<FaGit size={24} />} label="Git" />
-        <SkillCard icon={<FaJs size={24} />} label="Javascript" isActive />
-        <SkillCard icon={<FaSass size={24} />} label="Sass/Scss" />
-        <SkillCard icon={<SiNestjs size={24} />} label="Nest.Js" />
-        <SkillCard icon={<SiStorybook size={24} />} label="Storybook" />
-
-        <SkillCard icon={<SiNestjs size={24} />} label="Nest.Js" />
-        <SkillCard icon={<FaGit size={24} />} label="Git" />
-        <SkillCard icon={<SiStorybook size={24} />} label="Storybook" />
-        <SkillCard icon={<SiSocketdotio size={24} />} label="Socket.io" />
-        <SkillCard icon={<FaSass size={24} />} label="Sass/Scss" /> */}
+      <div className="grid grid-cols-5 gap-x-[72px] gap-y-[40px] pt-[60px] pb-[40px]">
+         <SkillCard icon={<GitIcon />} label="Git" />
+         <SkillCard icon={<GitIcon />} label="Git" />
+         <SkillCard icon={<GitIcon />} label="Git" />
+         <SkillCard icon={<GitIcon />} label="Git" />
+         <SkillCard icon={<GitIcon />} label="Git" />
+         <SkillCard icon={<GitIcon />} label="Git" />
+         <SkillCard icon={<GitIcon />} label="Git" />
+         <SkillCard icon={<GitIcon />} label="Git" />
+         <SkillCard icon={<GitIcon />} label="Git" />
+         <SkillCard icon={<GitIcon />} label="Git" />
       </div>
     </section>
   );
