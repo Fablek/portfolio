@@ -11,7 +11,7 @@ export default function SkillsSection() {
         My <span className="font-extrabold">Skills</span>
       </DisplayText>
 
-      <div className="grid grid-cols-5 gap-x-[72px] gap-y-[40px] mt-[20px] pt-[40px] pb-[40px]">
+      <div className="grid grid-cols-5 gap-x-[72px] gap-y-[40px] mt-5 pt-[40px] pb-[40px]">
          <SkillCard icon={<GitIcon />} label="Git" />
          <SkillCard icon={<GitIcon />} label="Git" />
          <SkillCard icon={<GitIcon />} label="Git" />
