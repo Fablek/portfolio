@@ -5,7 +5,7 @@ import GoogleIcon from "@/components/Icons/GoogleIcon";
 
 export default function ExperienceSection() {
     return (
-        <section className="bg-black mt-[60px] mb-[60px] pt-[60px] pb-[60px]" id="project">
+        <section className="bg-black mt-[60px] mb-[60px] pt-[60px] pb-[60px]">
             <div className="container px-28">
                 <DisplayText level={2} weight="regular" className="text-center py-[20px] text-white">
                     My <span className="font-extrabold">Experience</span>
