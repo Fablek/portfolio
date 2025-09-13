@@ -17,7 +17,7 @@ export default function TestimonialCard({
 }: TestimonialCardProps) {
   return (
     <div 
-      className={`flex flex-col items-center gap-6 text-center rounded-2xl p-8 shadow-md transition-all duration-300
+      className={`flex flex-col items-center gap-6 text-center rounded-2xl p-[40px] shadow-md transition-all duration-300
         ${isActive ? "bg-black text-white" : "bg-white text-gray-900"}`}
     >
       {/* Avatar */}

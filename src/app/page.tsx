@@ -4,6 +4,7 @@ import ExperienceSection from "@/components/ExperienceSection/ExperienceSection"
 import AboutSection from "@/components/AboutSection/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection/ProjectsSection";
 import TestimonialSection from "@/components/Testimonials/TestimonialsSection";
+import ContactSection from "@/components/ContactSection/ContactSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
     <AboutSection />
     <ProjectsSection />
     <TestimonialSection />
+    <ContactSection />
    </>
   );
 }
