@@ -101,7 +101,7 @@ export default function Header() {
                 <NavLink href="/#contact" onClick={close}>Contact me</NavLink>
               </nav>
               <Button
-                size="medium"
+                size="medium" 
                 iconPosition="right"
                 variant="solid"
                 icon={<DownloadIcon />}

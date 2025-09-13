@@ -1,8 +1,8 @@
-type Props = {
+import React from "react";
+
+type Props = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: string;
-  children: React.ReactNode;
   isActive?: boolean;
-  className?: string;
 };
 
 export default function NavLink({
@@ -10,12 +10,16 @@ export default function NavLink({
   children,
   isActive = false,
   className = "",
+  ...rest
 }: Props) {
   return (
     <a
       href={href}
+      {...rest} 
       className={`text-[20px] leading-[24px] tracking-[-0.02em] font-semibold ${
-        isActive ? "underline text-[var(--primary-neutral)]" : "text-[var(--primary-black)]"
+        isActive
+          ? "underline text-[var(--primary-neutral)]"
+          : "text-[var(--primary-black)]"
       } ${className}`}
     >
       {children}
