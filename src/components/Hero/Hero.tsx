@@ -10,10 +10,10 @@ import DiscordIcon from "@/components/Icons/DiscordIcon";
 
 export default function Hero() {
   return (
-    <section className="container px-6 md:px-28 mt-[60px] mb-[60px] relative flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+    <section className="container px-6 mt-[40px] md:mt-[60px] mb-[40px] md:mb-[60px] relative flex flex-col-reverse lg:flex-row items-center justify-between gap-12 xl:px-28">
       
       {/* Left side (text) */}
-      <div className="max-w-[600px]">
+      <div className="lg:max-w-[600px]">
         <div className="flex flex-col gap-2">
           <DisplayText level={1} weight="regular">
             Hello I’am <strong className="font-bold">Sebastian.</strong>
@@ -34,7 +34,7 @@ export default function Hero() {
         </ParagraphP2>
 
         {/* Socials */}
-        <div className="flex gap-4 absolute bottom-[-30px]">
+        <div className="flex gap-4 mt-[32px] xl:bottom-[-30px] xl:absolute">
           <SocialLink href="https://facebook.com" icon={<FacebookIcon />} isActive />
           <SocialLink href="https://www.linkedin.com/in/sebastian-pytka-376466208/" icon={<LinkedInIcon />} />
           <SocialLink href="https://discord.com/" icon={<DiscordIcon />} />
@@ -42,16 +42,28 @@ export default function Hero() {
       </div>
 
       {/* Right side (image) */}
-      <div className="relative flex-1 -ml-20 lg:-ml-40 xl:-ml-56">
+      <div className="relative flex-1 lg:-ml-40 xl:-ml-56">
+        {/* Mobile image */}
+        <Image
+          src="/images/Banner-mobile.svg"
+          alt="Hero Illustration Mobile"
+          width={500}
+          height={500}
+          className="w-full h-auto mx-auto block lg:hidden"
+          priority
+        />
+
+        {/* Desktop image */}
         <Image
           src="/images/Banner.svg"
           alt="Hero Illustration"
           width={500}
           height={500}
-          className="w-full h-auto mx-auto"
+          className="w-full h-auto mx-auto hidden lg:block"
           priority
         />
       </div>
+
     </section>
   );
 }

@@ -5,7 +5,7 @@ import SkillCard from "./SkillCard";
 export default function SkillsSection() {
   return (
     <section
-      className="container pt-[60px] mb-[60px] px-6 sm:px-10 md:px-16 lg:px-28"
+      className="container pt-[60px] mb-[60px] px-6 xl:px-28"
       id="skills"
     >
       <DisplayText
@@ -20,7 +20,7 @@ export default function SkillsSection() {
         className="
           grid 
           grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5
-          gap-x-6 sm:gap-x-10 md:gap-x-[48px] lg:gap-x-[72px] 
+          gap-x-6 md:gap-x-10 lg:gap-x-[48px] xl:gap-x-[72px] 
           gap-y-[40px]
           mt-5 pt-[40px] pb-[40px]
         "

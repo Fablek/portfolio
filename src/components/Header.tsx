@@ -37,7 +37,7 @@ export default function Header() {
       isScrolled ? "shadow-md" : ""
     }`}>
       <div
-        className={`container mx-auto px-6 md:px-28 flex items-center justify-between transition-all duration-300 ${
+        className={`container mx-auto px-6 xl:px-28 flex items-center justify-between transition-all duration-300 ${
           isScrolled ? "py-2" : "py-8 md:py-8"
         }`}
       >
